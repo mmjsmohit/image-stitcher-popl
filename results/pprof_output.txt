@@ -1,0 +1,913 @@
+  File: imagecollager3.exe
+Build ID: C:\Users\Sreekar\AppData\Local\Temp\go-build712269796\b001\exe\imagecollager3.exe2023-11-23 20:06:04.5665324 +0530 IST
+Type: cpu
+Time: Nov 23, 2023 at 8:06pm (IST)
+Duration: 1.86s, Total samples = 5.21s (280.43%)
+Showing nodes accounting for 5.21s, 100% of 5.21s total
+----------------------------------------------------------+-------------
+      flat  flat%   sum%        cum   cum%   calls calls% + context 	 	 
+----------------------------------------------------------+-------------
+                                             0.41s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.39s  7.49%  7.49%      0.41s  7.87%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:376
+                                             0.02s  4.88% |   runtime.asyncPreempt C:\Program Files\Go\src\runtime\preempt_amd64.s:8
+----------------------------------------------------------+-------------
+                                             0.35s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.35s  6.72% 14.20%      0.35s  6.72%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:389
+----------------------------------------------------------+-------------
+                                             0.26s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.26s  4.99% 19.19%      0.26s  4.99%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:391
+----------------------------------------------------------+-------------
+                                             0.26s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.26s  4.99% 24.18%      0.26s  4.99%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:347
+----------------------------------------------------------+-------------
+                                             0.28s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.25s  4.80% 28.98%      0.28s  5.37%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:390
+                                             0.03s 10.71% |   runtime.asyncPreempt C:\Program Files\Go\src\runtime\preempt_amd64.s:8
+----------------------------------------------------------+-------------
+                                             0.21s   100% |   runtime.memclrNoHeapPointersChunked C:\Program Files\Go\src\runtime\malloc.go:1316
+     0.21s  4.03% 33.01%      0.21s  4.03%                | runtime.memclrNoHeapPointers C:\Program Files\Go\src\runtime\memclr_amd64.s:127
+----------------------------------------------------------+-------------
+                                             0.20s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.20s  3.84% 36.85%      0.20s  3.84%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:348
+----------------------------------------------------------+-------------
+                                             0.20s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.18s  3.45% 40.31%      0.20s  3.84%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:388
+                                             0.02s 10.00% |   runtime.asyncPreempt C:\Program Files\Go\src\runtime\preempt_amd64.s:8
+----------------------------------------------------------+-------------
+                                             0.15s 83.33% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.03s 16.67% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+     0.18s  3.45% 43.76%      0.18s  3.45%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:486
+----------------------------------------------------------+-------------
+                                             0.17s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.17s  3.26% 47.02%      0.17s  3.26%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:377
+----------------------------------------------------------+-------------
+                                             0.09s 75.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+                                             0.03s 25.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.12s  2.30% 49.33%      0.12s  2.30%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:435
+----------------------------------------------------------+-------------
+                                             0.10s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.10s  1.92% 51.25%      0.10s  1.92%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:381
+----------------------------------------------------------+-------------
+                                             0.09s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.09s  1.73% 52.98%      0.09s  1.73%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:371
+----------------------------------------------------------+-------------
+                                             0.08s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.08s  1.54% 54.51%      0.08s  1.54%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:302
+----------------------------------------------------------+-------------
+                                             0.05s 62.50% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.03s 37.50% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+     0.08s  1.54% 56.05%      0.08s  1.54%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:519
+----------------------------------------------------------+-------------
+                                             0.07s 87.50% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+                                             0.01s 12.50% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.08s  1.54% 57.58%      0.08s  1.54%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:434
+----------------------------------------------------------+-------------
+                                             0.07s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.07s  1.34% 58.93%      0.07s  1.34%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:374
+----------------------------------------------------------+-------------
+                                             0.07s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.07s  1.34% 60.27%      0.07s  1.34%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:382
+----------------------------------------------------------+-------------
+                                             0.03s 42.86% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:390
+                                             0.02s 28.57% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:376
+                                             0.02s 28.57% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:388
+     0.07s  1.34% 61.61%      0.07s  1.34%                | runtime.asyncPreempt C:\Program Files\Go\src\runtime\preempt_amd64.s:8
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.06s  1.15% 62.76%      0.06s  1.15%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:379
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.06s  1.15% 63.92%      0.06s  1.15%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:197
+----------------------------------------------------------+-------------
+                                             0.03s 50.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+                                             0.03s 50.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+     0.06s  1.15% 65.07%      0.06s  1.15%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:433
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   syscall.SyscallN C:\Program Files\Go\src\runtime\syscall_windows.go:544
+     0.06s  1.15% 66.22%      0.06s  1.15%                | runtime.cgocall C:\Program Files\Go\src\runtime\cgocall.go:157
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.06s  1.15% 67.37%      0.06s  1.15%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:368
+----------------------------------------------------------+-------------
+                                             0.05s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.05s  0.96% 68.33%      0.05s  0.96%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:301
+----------------------------------------------------------+-------------
+                                             0.05s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.05s  0.96% 69.29%      0.05s  0.96%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:378
+----------------------------------------------------------+-------------
+                                             0.09s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.05s  0.96% 70.25%      0.09s  1.73%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+                                             0.01s 11.11% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:350
+                                             0.01s 11.11% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:380
+                                             0.01s 11.11% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:410
+                                             0.01s 11.11% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:414
+----------------------------------------------------------+-------------
+                                             0.05s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.05s  0.96% 71.21%      0.05s  0.96%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:449
+----------------------------------------------------------+-------------
+                                             0.04s 80.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+                                             0.01s 20.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+     0.05s  0.96% 72.17%      0.05s  0.96%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:455
+----------------------------------------------------------+-------------
+                                             0.04s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.04s  0.77% 72.94%      0.04s  0.77%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:298
+----------------------------------------------------------+-------------
+                                             0.04s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.04s  0.77% 73.70%      0.04s  0.77%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:388
+----------------------------------------------------------+-------------
+                                             0.02s 66.67% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+                                             0.01s 33.33% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+     0.03s  0.58% 74.28%      0.03s  0.58%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:199
+----------------------------------------------------------+-------------
+                                             0.01s 33.33% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:233
+                                             0.01s 33.33% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+                                             0.01s 33.33% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.03s  0.58% 74.86%      0.03s  0.58%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:200
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.03s  0.58% 75.43%      0.03s  0.58%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:68
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+     0.03s  0.58% 76.01%      0.03s  0.58%                | image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:82
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+     0.03s  0.58% 76.58%      0.03s  0.58%                | image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:86
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+     0.03s  0.58% 77.16%      0.03s  0.58%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:485
+----------------------------------------------------------+-------------
+                                             0.02s 66.67% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.01s 33.33% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+     0.03s  0.58% 77.74%      0.03s  0.58%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:510
+----------------------------------------------------------+-------------
+                                             0.02s 66.67% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.01s 33.33% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+     0.03s  0.58% 78.31%      0.03s  0.58%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:511
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.03s  0.58% 78.89%      0.03s  0.58%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:416
+----------------------------------------------------------+-------------
+                                             0.02s 66.67% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+                                             0.01s 33.33% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.03s  0.58% 79.46%      0.03s  0.58%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:439
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.02s  0.38% 79.85%      0.02s  0.38%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:299
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.02s  0.38% 80.23%      0.02s  0.38%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:303
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.02s  0.38% 80.61%      0.02s  0.38%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:178
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.02s  0.38% 81.00%      0.02s  0.38%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:183
+----------------------------------------------------------+-------------
+                                             0.11s 52.38% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+                                             0.08s 38.10% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+                                             0.02s  9.52% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:233
+     0.02s  0.38% 81.38%      0.21s  4.03%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+                                             0.11s 52.38% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+                                             0.03s 14.29% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:68
+                                             0.02s  9.52% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:48
+                                             0.01s  4.76% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:49
+                                             0.01s  4.76% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:59
+                                             0.01s  4.76% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:62
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.02s  0.38% 81.77%      0.02s  0.38%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:48
+----------------------------------------------------------+-------------
+                                             0.01s 50.00% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:226
+                                             0.01s 50.00% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.02s  0.38% 82.15%      0.02s  0.38%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:49
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.02s  0.38% 82.53%      0.02s  0.38%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:212
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.02s  0.38% 82.92%      0.02s  0.38%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:269
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+     0.02s  0.38% 83.30%      0.02s  0.38%                | image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:216
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.02s  0.38% 83.69%      0.02s  0.38%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:386
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.02s  0.38% 84.07%      0.02s  0.38%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:417
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.02s  0.38% 84.45%      0.02s  0.38%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:436
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.02s  0.38% 84.84%      0.02s  0.38%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:186
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.02s  0.38% 85.22%      0.02s  0.38%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:79
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.02s  0.38% 85.60%      0.02s  0.38%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:408
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:397 (inline)
+     0.01s  0.19% 85.80%      0.01s  0.19%                | github.com/nfnt/resize.clampUint8 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:26
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+     0.01s  0.19% 85.99%      0.01s  0.19%                | github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:300
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.01s  0.19% 86.18%      0.01s  0.19%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:395
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.01s  0.19% 86.37%      0.01s  0.19%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:396
+----------------------------------------------------------+-------------
+                                             0.02s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.01s  0.19% 86.56%      0.02s  0.38%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:397
+                                             0.01s 50.00% |   github.com/nfnt/resize.clampUint8 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:26 (inline)
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+     0.01s  0.19% 86.76%      0.01s  0.19%                | github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:398
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:398
+     0.01s  0.19% 86.95%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:224
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+     0.01s  0.19% 87.14%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:225
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+     0.01s  0.19% 87.33%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:230
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:398
+     0.01s  0.19% 87.52%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:231
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+     0.01s  0.19% 87.72%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:232
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:398
+     0.01s  0.19% 87.91%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:233
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+     0.01s  0.19% 88.10%      0.01s  0.19%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:198
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.01s  0.19% 88.29%      0.01s  0.19%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:201
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+     0.01s  0.19% 88.48%      0.01s  0.19%                | image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:215
+----------------------------------------------------------+-------------
+                                             0.11s   100% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.01s  0.19% 88.68%      0.11s  2.11%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+                                             0.06s 54.55% |   image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:228
+                                             0.02s 18.18% |   image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:216
+                                             0.01s  9.09% |   image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:218
+                                             0.01s  9.09% |   image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:222
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.01s  0.19% 88.87%      0.01s  0.19%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:59
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+     0.01s  0.19% 89.06%      0.01s  0.19%                | image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:62
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 89.25%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:174
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 89.44%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:178
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 89.64%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:209
+----------------------------------------------------------+-------------
+                                             0.62s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 89.83%      0.62s 11.90%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+                                             0.26s 41.94% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:347
+                                             0.20s 32.26% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:348
+                                             0.06s  9.68% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:368
+                                             0.04s  6.45% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:388
+                                             0.02s  3.23% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:408
+                                             0.01s  1.61% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:357
+                                             0.01s  1.61% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:390
+                                             0.01s  1.61% |   runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:425
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 90.02%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:224
+----------------------------------------------------------+-------------
+                                             0.88s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 90.21%      0.88s 16.89%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+                                             0.26s 29.55% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+                                             0.25s 28.41% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+                                             0.22s 25.00% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+                                             0.03s  3.41% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:398
+                                             0.03s  3.41% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:416
+                                             0.02s  2.27% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:386
+                                             0.02s  2.27% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:417
+                                             0.01s  1.14% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:354
+                                             0.01s  1.14% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:381
+                                             0.01s  1.14% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:385
+                                             0.01s  1.14% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:388
+----------------------------------------------------------+-------------
+                                             0.04s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 90.40%      0.04s  0.77%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:233
+                                             0.02s 50.00% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+                                             0.01s 25.00% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:200
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 90.60%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:259
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+     0.01s  0.19% 90.79%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:289
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+     0.01s  0.19% 90.98%      0.01s  0.19%                | image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:218
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+     0.01s  0.19% 91.17%      0.01s  0.19%                | image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:222
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+     0.01s  0.19% 91.36%      0.01s  0.19%                | image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:73
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:240
+     0.01s  0.19% 91.55%      0.01s  0.19%                | image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:79
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+     0.01s  0.19% 91.75%      0.01s  0.19%                | image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:84
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+     0.01s  0.19% 91.94%      0.01s  0.19%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:484
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+     0.01s  0.19% 92.13%      0.01s  0.19%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:512
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+     0.01s  0.19% 92.32%      0.01s  0.19%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:514
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+     0.01s  0.19% 92.51%      0.01s  0.19%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:517
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.01s  0.19% 92.71%      0.01s  0.19%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:354
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.01s  0.19% 92.90%      0.01s  0.19%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:381
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.01s  0.19% 93.09%      0.01s  0.19%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:385
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+     0.01s  0.19% 93.28%      0.01s  0.19%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:388
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.01s  0.19% 93.47%      0.01s  0.19%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:432
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+     0.01s  0.19% 93.67%      0.01s  0.19%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:450
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 93.86%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:104
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 94.05%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:106
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 94.24%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:112
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 94.43%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:114
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 94.63%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:115
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 94.82%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:132
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.01%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:158
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.20%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:159
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.39%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:162
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.59%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:163
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.78%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:167
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 95.97%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:169
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 96.16%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:172
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 96.35%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:174
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 96.55%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:181
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 96.74%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:192
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 96.93%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:74
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+     0.01s  0.19% 97.12%      0.01s  0.19%                | image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:96
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.(*mspan).nextFreeIndex C:\Program Files\Go\src\runtime\mbitmap.go:182
+     0.01s  0.19% 97.31%      0.01s  0.19%                | runtime.(*mspan).refillAllocCache C:\Program Files\Go\src\runtime\mbitmap.go:131
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.checkTimers C:\Program Files\Go\src\runtime\proc.go:3689
+     0.01s  0.19% 97.50%      0.01s  0.19%                | runtime.adjusttimers C:\Program Files\Go\src\runtime\time.go:669
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2912
+     0.01s  0.19% 97.70%      0.01s  0.19%                | runtime.checkTimers C:\Program Files\Go\src\runtime\proc.go:3681
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+     0.01s  0.19% 97.89%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:350
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.01s  0.19% 98.08%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:357
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+     0.01s  0.19% 98.27%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:380
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.01s  0.19% 98.46%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:390
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+     0.01s  0.19% 98.66%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:410
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+     0.01s  0.19% 98.85%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:414
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+     0.01s  0.19% 99.04%      0.01s  0.19%                | runtime.duffcopy C:\Program Files\Go\src\runtime\duff_amd64.s:425
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2963
+     0.01s  0.19% 99.23%      0.01s  0.19%                | runtime.globrunqget C:\Program Files\Go\src\runtime\proc.go:5992
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3081
+     0.01s  0.19% 99.42%      0.01s  0.19%                | runtime.pidleput C:\Program Files\Go\src\runtime\proc.go:6096
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.semawakeup C:\Program Files\Go\src\runtime\os_windows.go:844
+     0.01s  0.19% 99.62%      0.01s  0.19%                | runtime.stdcall1 C:\Program Files\Go\src\runtime\os_windows.go:1069
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.semasleep C:\Program Files\Go\src\runtime\os_windows.go:792
+     0.01s  0.19% 99.81%      0.01s  0.19%                | runtime.stdcall2 C:\Program Files\Go\src\runtime\os_windows.go:1078
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.sysUsedOS C:\Program Files\Go\src\runtime\mem_windows.go:63
+     0.01s  0.19%   100%      0.01s  0.19%                | runtime.stdcall4 C:\Program Files\Go\src\runtime\os_windows.go:1096
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).fill C:\Program Files\Go\src\image\jpeg\reader.go:164
+         0     0%   100%      0.06s  1.15%                | bufio.(*Reader).Read C:\Program Files\Go\src\bufio\bufio.go:244
+                                             0.06s   100% |   os.(*File).Read C:\Program Files\Go\src\os\file.go:118
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   main.(*MyImage).drawRaw C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:100
+         0     0%   100%      0.22s  4.22%                | github.com/nfnt/resize.Resize C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:179
+                                             0.22s   100% |   github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+----------------------------------------------------------+-------------
+         0     0%   100%      2.16s 41.46%                | github.com/nfnt/resize.Resize.func5 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:185
+                                             0.41s 18.98% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:376
+                                             0.35s 16.20% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:389
+                                             0.28s 12.96% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:390
+                                             0.26s 12.04% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:391
+                                             0.20s  9.26% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:388
+                                             0.17s  7.87% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:377
+                                             0.10s  4.63% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:381
+                                             0.09s  4.17% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:371
+                                             0.07s  3.24% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:374
+                                             0.07s  3.24% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:382
+                                             0.06s  2.78% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:379
+                                             0.05s  2.31% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:378
+                                             0.02s  0.93% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:397
+                                             0.01s  0.46% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:395
+                                             0.01s  0.46% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:396
+                                             0.01s  0.46% |   github.com/nfnt/resize.resizeYCbCr C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\converter.go:398
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   github.com/nfnt/resize.Resize C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:179
+         0     0%   100%      0.22s  4.22%                | github.com/nfnt/resize.imageYCbCrToYCC C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:136
+                                             0.08s 36.36% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:302
+                                             0.05s 22.73% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:301
+                                             0.04s 18.18% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:298
+                                             0.02s  9.09% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:299
+                                             0.02s  9.09% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:303
+                                             0.01s  4.55% |   github.com/nfnt/resize.convertToYCC420 C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\ycc.go:300
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   main.(*MyImage).At C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:49 (inline)
+         0     0%   100%      0.01s  0.19%                | image.(*RGBA).At C:\Program Files\Go\src\image\image.go:103
+                                             0.01s   100% |   runtime.convTnoptr C:\Program Files\Go\src\runtime\iface.go:348
+----------------------------------------------------------+-------------
+                                             2.75s   100% |   main.loadImageChannel C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:359
+         0     0%   100%      2.75s 52.78%                | image.Decode C:\Program Files\Go\src\image\format.go:93
+                                             2.75s   100% |   image/jpeg.Decode C:\Program Files\Go\src\image\jpeg\reader.go:773
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).makeImg C:\Program Files\Go\src\image\jpeg\scan.go:40
+         0     0%   100%      0.06s  1.15%                | image.NewYCbCr C:\Program Files\Go\src\image\ycbcr.go:190
+                                             0.06s   100% |   runtime.makeslice C:\Program Files\Go\src\runtime\slice.go:103
+----------------------------------------------------------+-------------
+                                             2.26s   100% |   image/jpeg.Decode C:\Program Files\Go\src\image\jpeg\reader.go:773
+         0     0%   100%      2.26s 43.38%                | image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+                                             0.88s 38.94% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+                                             0.62s 27.43% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:219
+                                             0.15s  6.64% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:156
+                                             0.12s  5.31% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+                                             0.11s  4.87% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+                                             0.09s  3.98% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:291
+                                             0.08s  3.54% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+                                             0.06s  2.65% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:150
+                                             0.04s  1.77% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:233
+                                             0.02s  0.88% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:212
+                                             0.02s  0.88% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:269
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:174
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:178
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:209
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:224
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:240
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:259
+                                             0.01s  0.44% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:289
+----------------------------------------------------------+-------------
+                                             0.49s   100% |   image/jpeg.Decode C:\Program Files\Go\src\image\jpeg\reader.go:773
+         0     0%   100%      0.49s  9.40%                | image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:650
+                                             0.49s   100% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+         0     0%   100%      0.01s  0.19%                | image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:226
+                                             0.01s   100% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:49
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).readByte C:\Program Files\Go\src\image\jpeg\reader.go:194
+         0     0%   100%      0.06s  1.15%                | image/jpeg.(*decoder).fill C:\Program Files\Go\src\image\jpeg\reader.go:164
+                                             0.06s   100% |   bufio.(*Reader).Read C:\Program Files\Go\src\bufio\bufio.go:244
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:150
+         0     0%   100%      0.06s  1.15%                | image/jpeg.(*decoder).makeImg C:\Program Files\Go\src\image\jpeg\scan.go:40
+                                             0.06s   100% |   image.NewYCbCr C:\Program Files\Go\src\image\ycbcr.go:190
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.06s  1.15%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:150
+                                             0.06s   100% |   image/jpeg.(*decoder).makeImg C:\Program Files\Go\src\image\jpeg\scan.go:40
+----------------------------------------------------------+-------------
+                                             0.15s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.15s  2.88%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:156
+                                             0.15s   100% |   runtime.makeslice C:\Program Files\Go\src\runtime\slice.go:103
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.01s  0.19%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:240
+                                             0.01s   100% |   image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:79
+----------------------------------------------------------+-------------
+                                             0.11s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.11s  2.11%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:254
+                                             0.08s 72.73% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+                                             0.01s  9.09% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:198
+                                             0.01s  9.09% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:199
+                                             0.01s  9.09% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:200
+----------------------------------------------------------+-------------
+                                             0.08s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.08s  1.54%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:265
+                                             0.03s 37.50% |   image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:82
+                                             0.03s 37.50% |   image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:86
+                                             0.01s 12.50% |   image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:73
+                                             0.01s 12.50% |   image/jpeg.(*decoder).receiveExtend C:\Program Files\Go\src\image\jpeg\huffman.go:84
+----------------------------------------------------------+-------------
+                                             0.12s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+         0     0%   100%      0.12s  2.30%                | image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+                                             0.03s 25.00% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:486
+                                             0.03s 25.00% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+                                             0.03s 25.00% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:519
+                                             0.01s  8.33% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:510
+                                             0.01s  8.33% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:511
+                                             0.01s  8.33% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:517
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:228
+         0     0%   100%      0.06s  1.15%                | image/jpeg.(*decoder).readByte C:\Program Files\Go\src\image\jpeg\reader.go:194
+                                             0.06s   100% |   image/jpeg.(*decoder).fill C:\Program Files\Go\src\image\jpeg\reader.go:164
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   image/jpeg.(*decoder).ensureNBits C:\Program Files\Go\src\image\jpeg\huffman.go:50
+         0     0%   100%      0.06s  1.15%                | image/jpeg.(*decoder).readByteStuffedByte C:\Program Files\Go\src\image\jpeg\reader.go:228
+                                             0.06s   100% |   image/jpeg.(*decoder).readByte C:\Program Files\Go\src\image\jpeg\reader.go:194
+----------------------------------------------------------+-------------
+                                             0.19s 86.36% |   image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.03s 13.64% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:301
+         0     0%   100%      0.22s  4.22%                | image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+                                             0.02s  9.09% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:186
+                                             0.02s  9.09% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:79
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:104
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:106
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:112
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:114
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:115
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:132
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:158
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:159
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:162
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:163
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:167
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:169
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:172
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:174
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:181
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:192
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:74
+                                             0.01s  4.55% |   image/jpeg.idct C:\Program Files\Go\src\image\jpeg\idct.go:96
+----------------------------------------------------------+-------------
+                                             0.49s   100% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:650
+         0     0%   100%      0.49s  9.40%                | image/jpeg.(*decoder).reconstructProgressiveImage C:\Program Files\Go\src\image\jpeg\scan.go:472
+                                             0.19s 38.78% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:488
+                                             0.15s 30.61% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:486
+                                             0.05s 10.20% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:519
+                                             0.03s  6.12% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:485
+                                             0.02s  4.08% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:510
+                                             0.02s  4.08% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:511
+                                             0.01s  2.04% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:484
+                                             0.01s  2.04% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:512
+                                             0.01s  2.04% |   image/jpeg.(*decoder).reconstructBlock C:\Program Files\Go\src\image\jpeg\scan.go:514
+----------------------------------------------------------+-------------
+                                             0.26s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+         0     0%   100%      0.26s  4.99%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:376
+                                             0.11s 42.31% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:184
+                                             0.06s 23.08% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:197
+                                             0.02s  7.69% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:178
+                                             0.02s  7.69% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:183
+                                             0.02s  7.69% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:199
+                                             0.01s  3.85% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:200
+                                             0.01s  3.85% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:201
+                                             0.01s  3.85% |   image/jpeg.(*decoder).decodeHuffman C:\Program Files\Go\src\image\jpeg\huffman.go:215
+----------------------------------------------------------+-------------
+                                             0.03s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+         0     0%   100%      0.03s  0.58%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:398
+                                             0.01s 33.33% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:224
+                                             0.01s 33.33% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:231
+                                             0.01s 33.33% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:233
+----------------------------------------------------------+-------------
+                                             0.25s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+         0     0%   100%      0.25s  4.80%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+                                             0.05s 20.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:449
+                                             0.04s 16.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+                                             0.04s 16.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:455
+                                             0.03s 12.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:433
+                                             0.03s 12.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:435
+                                             0.02s  8.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:436
+                                             0.01s  4.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:432
+                                             0.01s  4.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:434
+                                             0.01s  4.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:439
+                                             0.01s  4.00% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:450
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:225
+         0     0%   100%      0.22s  4.22%                | image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:423
+                                             0.09s 40.91% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:435
+                                             0.07s 31.82% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:434
+                                             0.03s 13.64% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:433
+                                             0.02s  9.09% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:439
+                                             0.01s  4.55% |   image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:455
+----------------------------------------------------------+-------------
+                                             0.04s   100% |   image/jpeg.(*decoder).refine C:\Program Files\Go\src\image\jpeg\scan.go:409
+         0     0%   100%      0.04s  0.77%                | image/jpeg.(*decoder).refineNonZeroes C:\Program Files\Go\src\image\jpeg\scan.go:442
+                                             0.01s 25.00% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:225
+                                             0.01s 25.00% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:226
+                                             0.01s 25.00% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:230
+                                             0.01s 25.00% |   image/jpeg.(*decoder).decodeBit C:\Program Files\Go\src\image\jpeg\huffman.go:232
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.Encode C:\Program Files\Go\src\image\jpeg\writer.go:634
+         0     0%   100%      0.01s  0.19%                | image/jpeg.(*encoder).writeSOS C:\Program Files\Go\src\image\jpeg\writer.go:549
+                                             0.01s   100% |   image/jpeg.toYCbCr C:\Program Files\Go\src\image\jpeg\writer.go:396
+----------------------------------------------------------+-------------
+                                             2.75s   100% |   image.Decode C:\Program Files\Go\src\image\format.go:93
+         0     0%   100%      2.75s 52.78%                | image/jpeg.Decode C:\Program Files\Go\src\image\jpeg\reader.go:773
+                                             2.26s 82.18% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:624
+                                             0.49s 17.82% |   image/jpeg.(*decoder).decode C:\Program Files\Go\src\image\jpeg\reader.go:650
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   main.saveImage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:417
+         0     0%   100%      0.01s  0.19%                | image/jpeg.Encode C:\Program Files\Go\src\image\jpeg\writer.go:634
+                                             0.01s   100% |   image/jpeg.(*encoder).writeSOS C:\Program Files\Go\src\image\jpeg\writer.go:549
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.(*encoder).writeSOS C:\Program Files\Go\src\image\jpeg\writer.go:549
+         0     0%   100%      0.01s  0.19%                | image/jpeg.toYCbCr C:\Program Files\Go\src\image\jpeg\writer.go:396
+                                             0.01s   100% |   main.(*MyImage).At C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:49
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   os.(*File).read C:\Program Files\Go\src\os\file_posix.go:29
+         0     0%   100%      0.06s  1.15%                | internal/poll.(*FD).Read C:\Program Files\Go\src\internal\poll\fd_windows.go:422
+                                             0.06s   100% |   syscall.Read C:\Program Files\Go\src\syscall\syscall_windows.go:417
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image/jpeg.toYCbCr C:\Program Files\Go\src\image\jpeg\writer.go:396
+         0     0%   100%      0.01s  0.19%                | main.(*MyImage).At C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:49
+                                             0.01s   100% |   image.(*RGBA).At C:\Program Files\Go\src\image\image.go:103 (inline)
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   main.drawSingleImageOnBackground C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:247
+         0     0%   100%      0.22s  4.22%                | main.(*MyImage).drawRaw C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:100
+                                             0.22s   100% |   github.com/nfnt/resize.Resize C:\Users\Sreekar\go\pkg\mod\github.com\nfnt\resize@v0.0.0-20180221191011-83c6a9932646\resize.go:179
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   main.makeImageCollage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:199
+         0     0%   100%      0.22s  4.22%                | main.drawImagesOnBackgroundInParallel C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:266
+                                             0.22s   100% |   main.drawSingleImageOnBackground C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:247
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   main.drawImagesOnBackgroundInParallel C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:266
+         0     0%   100%      0.22s  4.22%                | main.drawSingleImageOnBackground C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:247
+                                             0.22s   100% |   main.(*MyImage).drawRaw C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:100
+----------------------------------------------------------+-------------
+         0     0%   100%      2.75s 52.78%                | main.loadImageChannel C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:359
+                                             2.75s   100% |   image.Decode C:\Program Files\Go\src\image\format.go:93
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   runtime.main C:\Program Files\Go\src\runtime\proc.go:267
+         0     0%   100%      0.22s  4.22%                | main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:473
+                                             0.22s   100% |   main.makeImageCollage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:199
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.main C:\Program Files\Go\src\runtime\proc.go:267
+         0     0%   100%      0.01s  0.19%                | main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:481
+                                             0.01s   100% |   main.saveImage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:417
+----------------------------------------------------------+-------------
+                                             0.22s   100% |   main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:473
+         0     0%   100%      0.22s  4.22%                | main.makeImageCollage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:199
+                                             0.22s   100% |   main.drawImagesOnBackgroundInParallel C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:266
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:481
+         0     0%   100%      0.01s  0.19%                | main.saveImage C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:417
+                                             0.01s   100% |   image/jpeg.Encode C:\Program Files\Go\src\image\jpeg\writer.go:634
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   bufio.(*Reader).Read C:\Program Files\Go\src\bufio\bufio.go:244
+         0     0%   100%      0.06s  1.15%                | os.(*File).Read C:\Program Files\Go\src\os\file.go:118
+                                             0.06s   100% |   os.(*File).read C:\Program Files\Go\src\os\file_posix.go:29 (inline)
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   os.(*File).Read C:\Program Files\Go\src\os\file.go:118 (inline)
+         0     0%   100%      0.06s  1.15%                | os.(*File).read C:\Program Files\Go\src\os\file_posix.go:29
+                                             0.06s   100% |   internal/poll.(*FD).Read C:\Program Files\Go\src\internal\poll\fd_windows.go:422
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1087
+         0     0%   100%      0.01s  0.19%                | runtime.(*mcache).nextFree C:\Program Files\Go\src\runtime\malloc.go:918
+                                             0.01s   100% |   runtime.(*mspan).nextFreeIndex C:\Program Files\Go\src\runtime\mbitmap.go:182
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.systemstack C:\Program Files\Go\src\runtime\asm_amd64.s:509
+         0     0%   100%      0.01s  0.19%                | runtime.(*mheap).alloc.func1 C:\Program Files\Go\src\runtime\mheap.go:968
+                                             0.01s   100% |   runtime.(*mheap).allocSpan C:\Program Files\Go\src\runtime\mheap.go:1351
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.(*mheap).alloc.func1 C:\Program Files\Go\src\runtime\mheap.go:968
+         0     0%   100%      0.01s  0.19%                | runtime.(*mheap).allocSpan C:\Program Files\Go\src\runtime\mheap.go:1351
+                                             0.01s   100% |   runtime.sysUsed C:\Program Files\Go\src\runtime\mem.go:77 (inline)
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.(*mcache).nextFree C:\Program Files\Go\src\runtime\malloc.go:918
+         0     0%   100%      0.01s  0.19%                | runtime.(*mspan).nextFreeIndex C:\Program Files\Go\src\runtime\mbitmap.go:182
+                                             0.01s   100% |   runtime.(*mspan).refillAllocCache C:\Program Files\Go\src\runtime\mbitmap.go:131
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.stealWork C:\Program Files\Go\src\runtime\proc.go:3293
+         0     0%   100%      0.01s  0.19%                | runtime.checkTimers C:\Program Files\Go\src\runtime\proc.go:3689
+                                             0.01s   100% |   runtime.adjusttimers C:\Program Files\Go\src\runtime\time.go:669
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   image.(*RGBA).At C:\Program Files\Go\src\image\image.go:103
+         0     0%   100%      0.01s  0.19%                | runtime.convTnoptr C:\Program Files\Go\src\runtime\iface.go:348
+                                             0.01s   100% |   runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1087
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+         0     0%   100%      0.01s  0.19%                | runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2912
+                                             0.01s   100% |   runtime.checkTimers C:\Program Files\Go\src\runtime\proc.go:3681
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+         0     0%   100%      0.01s  0.19%                | runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2963
+                                             0.01s   100% |   runtime.globrunqget C:\Program Files\Go\src\runtime\proc.go:5992
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+         0     0%   100%      0.01s  0.19%                | runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2999
+                                             0.01s   100% |   runtime.stealWork C:\Program Files\Go\src\runtime\proc.go:3293
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+         0     0%   100%      0.01s  0.19%                | runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3062
+                                             0.01s   100% |   runtime.lock C:\Program Files\Go\src\runtime\lock_sema.go:35 (inline)
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+         0     0%   100%      0.01s  0.19%                | runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3081
+                                             0.01s   100% |   runtime.pidleput C:\Program Files\Go\src\runtime\proc.go:6096
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.mcall C:\Program Files\Go\src\runtime\asm_amd64.s:458
+         0     0%   100%      0.01s  0.19%                | runtime.goexit0 C:\Program Files\Go\src\runtime\proc.go:3921
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.newstack C:\Program Files\Go\src\runtime\stack.go:1074
+         0     0%   100%      0.01s  0.19%                | runtime.gopreempt_m C:\Program Files\Go\src\runtime\proc.go:3788
+                                             0.01s   100% |   runtime.goschedImpl C:\Program Files\Go\src\runtime\proc.go:3760
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.gopreempt_m C:\Program Files\Go\src\runtime\proc.go:3788
+         0     0%   100%      0.01s  0.19%                | runtime.goschedImpl C:\Program Files\Go\src\runtime\proc.go:3760
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3062 (inline)
+         0     0%   100%      0.01s  0.19%                | runtime.lock C:\Program Files\Go\src\runtime\lock_sema.go:35
+                                             0.01s   100% |   runtime.lockWithRank C:\Program Files\Go\src\runtime\lockrank_off.go:24 (inline)
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.lockWithRank C:\Program Files\Go\src\runtime\lockrank_off.go:24
+         0     0%   100%      0.01s  0.19%                | runtime.lock2 C:\Program Files\Go\src\runtime\lock_sema.go:88
+                                             0.01s   100% |   runtime.semasleep C:\Program Files\Go\src\runtime\os_windows.go:792
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.lock C:\Program Files\Go\src\runtime\lock_sema.go:35 (inline)
+         0     0%   100%      0.01s  0.19%                | runtime.lockWithRank C:\Program Files\Go\src\runtime\lockrank_off.go:24
+                                             0.01s   100% |   runtime.lock2 C:\Program Files\Go\src\runtime\lock_sema.go:88
+----------------------------------------------------------+-------------
+         0     0%   100%      0.23s  4.41%                | runtime.main C:\Program Files\Go\src\runtime\proc.go:267
+                                             0.22s 95.65% |   main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:473
+                                             0.01s  4.35% |   main.main C:\Users\Sreekar\Desktop\Go\imagecollager\imagecollager3.go:481
+----------------------------------------------------------+-------------
+                                             0.15s 71.43% |   image/jpeg.(*decoder).processSOS C:\Program Files\Go\src\image\jpeg\scan.go:156
+                                             0.06s 28.57% |   image.NewYCbCr C:\Program Files\Go\src\image\ycbcr.go:190
+         0     0%   100%      0.21s  4.03%                | runtime.makeslice C:\Program Files\Go\src\runtime\slice.go:103
+                                             0.21s   100% |   runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1220
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.convTnoptr C:\Program Files\Go\src\runtime\iface.go:348
+         0     0%   100%      0.01s  0.19%                | runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1087
+                                             0.01s   100% |   runtime.(*mcache).nextFree C:\Program Files\Go\src\runtime\malloc.go:918
+----------------------------------------------------------+-------------
+                                             0.21s   100% |   runtime.makeslice C:\Program Files\Go\src\runtime\slice.go:103
+         0     0%   100%      0.21s  4.03%                | runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1220
+                                             0.21s   100% |   runtime.memclrNoHeapPointersChunked C:\Program Files\Go\src\runtime\malloc.go:1316
+----------------------------------------------------------+-------------
+         0     0%   100%      0.05s  0.96%                | runtime.mcall C:\Program Files\Go\src\runtime\asm_amd64.s:458
+                                             0.04s 80.00% |   runtime.park_m C:\Program Files\Go\src\runtime\proc.go:3745
+                                             0.01s 20.00% |   runtime.goexit0 C:\Program Files\Go\src\runtime\proc.go:3921
+----------------------------------------------------------+-------------
+                                             0.21s   100% |   runtime.mallocgc C:\Program Files\Go\src\runtime\malloc.go:1220
+         0     0%   100%      0.21s  4.03%                | runtime.memclrNoHeapPointersChunked C:\Program Files\Go\src\runtime\malloc.go:1316
+                                             0.21s   100% |   runtime.memclrNoHeapPointers C:\Program Files\Go\src\runtime\memclr_amd64.s:127
+----------------------------------------------------------+-------------
+         0     0%   100%      0.01s  0.19%                | runtime.morestack C:\Program Files\Go\src\runtime\asm_amd64.s:593
+                                             0.01s   100% |   runtime.newstack C:\Program Files\Go\src\runtime\stack.go:1074
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.morestack C:\Program Files\Go\src\runtime\asm_amd64.s:593
+         0     0%   100%      0.01s  0.19%                | runtime.newstack C:\Program Files\Go\src\runtime\stack.go:1074
+                                             0.01s   100% |   runtime.gopreempt_m C:\Program Files\Go\src\runtime\proc.go:3788
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.startm C:\Program Files\Go\src\runtime\proc.go:2649
+         0     0%   100%      0.01s  0.19%                | runtime.notewakeup C:\Program Files\Go\src\runtime\lock_sema.go:161
+                                             0.01s   100% |   runtime.semawakeup C:\Program Files\Go\src\runtime\os_windows.go:844
+----------------------------------------------------------+-------------
+                                             0.04s   100% |   runtime.mcall C:\Program Files\Go\src\runtime\asm_amd64.s:458
+         0     0%   100%      0.04s  0.77%                | runtime.park_m C:\Program Files\Go\src\runtime\proc.go:3745
+                                             0.03s 75.00% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+                                             0.01s 25.00% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3600
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3600
+         0     0%   100%      0.01s  0.19%                | runtime.resetspinning C:\Program Files\Go\src\runtime\proc.go:3466
+                                             0.01s   100% |   runtime.wakep C:\Program Files\Go\src\runtime\proc.go:2760
+----------------------------------------------------------+-------------
+                                             0.03s 60.00% |   runtime.park_m C:\Program Files\Go\src\runtime\proc.go:3745
+                                             0.01s 20.00% |   runtime.goexit0 C:\Program Files\Go\src\runtime\proc.go:3921
+                                             0.01s 20.00% |   runtime.goschedImpl C:\Program Files\Go\src\runtime\proc.go:3760
+         0     0%   100%      0.05s  0.96%                | runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3582
+                                             0.01s 20.00% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2912
+                                             0.01s 20.00% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2963
+                                             0.01s 20.00% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2999
+                                             0.01s 20.00% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3062
+                                             0.01s 20.00% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:3081
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.park_m C:\Program Files\Go\src\runtime\proc.go:3745
+         0     0%   100%      0.01s  0.19%                | runtime.schedule C:\Program Files\Go\src\runtime\proc.go:3600
+                                             0.01s   100% |   runtime.resetspinning C:\Program Files\Go\src\runtime\proc.go:3466
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.lock2 C:\Program Files\Go\src\runtime\lock_sema.go:88
+         0     0%   100%      0.01s  0.19%                | runtime.semasleep C:\Program Files\Go\src\runtime\os_windows.go:792
+                                             0.01s   100% |   runtime.stdcall2 C:\Program Files\Go\src\runtime\os_windows.go:1078
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.notewakeup C:\Program Files\Go\src\runtime\lock_sema.go:161
+         0     0%   100%      0.01s  0.19%                | runtime.semawakeup C:\Program Files\Go\src\runtime\os_windows.go:844
+                                             0.01s   100% |   runtime.stdcall1 C:\Program Files\Go\src\runtime\os_windows.go:1069
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.wakep C:\Program Files\Go\src\runtime\proc.go:2760
+         0     0%   100%      0.01s  0.19%                | runtime.startm C:\Program Files\Go\src\runtime\proc.go:2649
+                                             0.01s   100% |   runtime.notewakeup C:\Program Files\Go\src\runtime\lock_sema.go:161
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.findRunnable C:\Program Files\Go\src\runtime\proc.go:2999
+         0     0%   100%      0.01s  0.19%                | runtime.stealWork C:\Program Files\Go\src\runtime\proc.go:3293
+                                             0.01s   100% |   runtime.checkTimers C:\Program Files\Go\src\runtime\proc.go:3689
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.(*mheap).allocSpan C:\Program Files\Go\src\runtime\mheap.go:1351 (inline)
+         0     0%   100%      0.01s  0.19%                | runtime.sysUsed C:\Program Files\Go\src\runtime\mem.go:77
+                                             0.01s   100% |   runtime.sysUsedOS C:\Program Files\Go\src\runtime\mem_windows.go:63
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.sysUsed C:\Program Files\Go\src\runtime\mem.go:77
+         0     0%   100%      0.01s  0.19%                | runtime.sysUsedOS C:\Program Files\Go\src\runtime\mem_windows.go:63
+                                             0.01s   100% |   runtime.stdcall4 C:\Program Files\Go\src\runtime\os_windows.go:1096
+----------------------------------------------------------+-------------
+         0     0%   100%      0.01s  0.19%                | runtime.systemstack C:\Program Files\Go\src\runtime\asm_amd64.s:509
+                                             0.01s   100% |   runtime.(*mheap).alloc.func1 C:\Program Files\Go\src\runtime\mheap.go:968
+----------------------------------------------------------+-------------
+                                             0.01s   100% |   runtime.resetspinning C:\Program Files\Go\src\runtime\proc.go:3466
+         0     0%   100%      0.01s  0.19%                | runtime.wakep C:\Program Files\Go\src\runtime\proc.go:2760
+                                             0.01s   100% |   runtime.startm C:\Program Files\Go\src\runtime\proc.go:2649
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   internal/poll.(*FD).Read C:\Program Files\Go\src\internal\poll\fd_windows.go:422
+         0     0%   100%      0.06s  1.15%                | syscall.Read C:\Program Files\Go\src\syscall\syscall_windows.go:417
+                                             0.06s   100% |   syscall.ReadFile C:\Program Files\Go\src\syscall\syscall_windows.go:438 (inline)
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   syscall.Read C:\Program Files\Go\src\syscall\syscall_windows.go:417 (inline)
+         0     0%   100%      0.06s  1.15%                | syscall.ReadFile C:\Program Files\Go\src\syscall\syscall_windows.go:438
+                                             0.06s   100% |   syscall.readFile C:\Program Files\Go\src\syscall\zsyscall_windows.go:1024
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   syscall.readFile C:\Program Files\Go\src\syscall\zsyscall_windows.go:1024
+         0     0%   100%      0.06s  1.15%                | syscall.Syscall6 C:\Program Files\Go\src\runtime\syscall_windows.go:488
+                                             0.06s   100% |   syscall.SyscallN C:\Program Files\Go\src\runtime\syscall_windows.go:544
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   syscall.Syscall6 C:\Program Files\Go\src\runtime\syscall_windows.go:488
+         0     0%   100%      0.06s  1.15%                | syscall.SyscallN C:\Program Files\Go\src\runtime\syscall_windows.go:544
+                                             0.06s   100% |   runtime.cgocall C:\Program Files\Go\src\runtime\cgocall.go:157
+----------------------------------------------------------+-------------
+                                             0.06s   100% |   syscall.ReadFile C:\Program Files\Go\src\syscall\syscall_windows.go:438
+         0     0%   100%      0.06s  1.15%                | syscall.readFile C:\Program Files\Go\src\syscall\zsyscall_windows.go:1024
+                                             0.06s   100% |   syscall.Syscall6 C:\Program Files\Go\src\runtime\syscall_windows.go:488
+----------------------------------------------------------+-------------
+
+    
