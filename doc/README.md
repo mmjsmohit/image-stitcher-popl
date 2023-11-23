@@ -15,7 +15,11 @@ Problem Statement -
 This project Image Stitcher addresses the technical challenge of programmatically generating image collages. The objective is to implement a solution that enables users to customise collage shapes (rectangles or circles), layouts (number of rows), and employs parallel processing for efficient handling of multiple images. We have implemented this in two languages, Go and Python.
 
 POPL Angle -
-Parallelism and Performance: The POPL (Principles of Programming Languages) angle in this project lies in the efficient utilisation of parallelism for image rendering, enhancing performance. Golang's concurrency support is leveraged to handle multiple images concurrently, optimising collage creation.
+Computational Intensity: - Image stitching, a complex task, can be computationally intensive, especially when handling numerous high-resolution images. - The need for an efficient solution to manage computational resources and execution time becomes crucial.
+Choice of Programming Languages: - Initially implemented the image stitching algorithm in Python. - Instead of processing images sequentially, stitching them individually onto the final collage, implementing parallelisation improves performance by enabling simultaneous stitching of all images. - Encountered performance bottlenecks due to the Global Interpreter Lock (GIL) in Python, limiting effective parallelisation.
+Transition to Go for Concurrency: - Transitioned to Go, a statically-typed language known for its concurrency support through goroutines. - Go's goroutines enable concurrent execution, addressing the limitations of Python's GIL and significantly improving performance. - The adoption of Go aligns with POPL principles by emphasizing concurrency to tackle intricate image processing tasks. - Demonstrates the advantage of using a language like Go, specifically designed for concurrent and parallel programming, in addressing real-world challenges.
+
+While image stitching has been addressed in languages like HTML, CSS, PHP, etc., our project stands out by introducing parallelization, a novel approach to enhance computational efficiency. This strategic use of concurrent processing, especially with Go's goroutines, sets our solution apart from traditional methods.
 
 ## 2. Software Architecture
 
@@ -29,6 +33,15 @@ The software is structured around several key types:
 - `ImageCollageParameters`: A type representing the parameters for creating an image collage.
 
 The main function of the program is `makeImageCollage`, which takes a set of parameters and a list of images, and returns a new image that is a collage of the input images.
+
+For the Go code, we have used the nfnt/resize library (https://github.com/nfnt/resize) by and the Python Imaging Library (PIL) for the python code.
+nfnt/resize -
+The nfnt/resize library is a versatile Go package designed for image resizing, offering a range of interpolation methods for optimal results. With functions like resize.Resize and resize.Thumbnail, developers can efficiently scale and downscale images while preserving aspect ratios. The library supports interpolation techniques such as Nearest-Neighbor, Bilinear, Bicubic, and others, allowing users to choose the method that best suits their use case. Despite being no longer actively updated, it remains a reliable tool for image manipulation in Go.
+
+PIL-
+The Python Imaging Library (PIL), now known as the Pillow library, is a powerful image processing library in Python. PIL provides extensive support for opening, manipulating, and saving various image file formats. It offers a wide range of image processing capabilities, including resizing, cropping, filtering, and enhancing images. PIL has been important for image-related tasks, hence we chose it for this projects. Its successor, Pillow, continues to be actively maintained and expanded, ensuring compatibility with the latest Python versions and providing users with a robust set of tools for image manipulation.
+
+In creating our image collage project, we've put together different pieces to make everything work smoothly. We used existing tools like the nfnt/resize library in Go and the Python Imaging Library (PIL) to handle some parts of dealing with images. However, the main chunk of our code, where we stitch images, figure out the layout of the collage, and make everything happen at the same time (parallelization), is our own creation. We wrote specific instructions for our project needs, making sure everything fits together well. This customized approach helped us tackle the unique challenges our project presented and ensured that all the different parts work seamlessly to generate image collages.
 
 ## 3. POPL Aspects
 
