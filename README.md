@@ -1,19 +1,24 @@
 # Image Stitcher
+
 ## **Project members**
-    *  Mohit Tiwari                 -   2021A7PS2719G 
+
+    *  Mohit Tiwari                 -   2021A7PS2719G
     *  Shaunak Ravi Nagrecha        -   2021A7PS3039G
     *  Sreekar Choudary Yadlapalli  -   2021A7PS2602G
     *  Tanishq Suresh Gholap        -   2021A7PS2728G
+
 ## 1. Problem Statement
+
 The Image Stitcher is a Go program designed to create a collage of images. It takes a source path of images and stitches them together based on the provided parameters such as shape, rows, width, and height.
 
-Problem Statement - 
+Problem Statement -
 This project Image Stitcher addresses the technical challenge of programmatically generating image collages. The objective is to implement a solution that enables users to customise collage shapes (rectangles or circles), layouts (number of rows), and employs parallel processing for efficient handling of multiple images. We have implemented this in two languages, Go and Python.
 
-POPL Angle - 
+POPL Angle -
 Parallelism and Performance: The POPL (Principles of Programming Languages) angle in this project lies in the efficient utilisation of parallelism for image rendering, enhancing performance. Golang's concurrency support is leveraged to handle multiple images concurrently, optimising collage creation.
 
 ## 2. Software Architecture
+
 The software is structured around several key types:
 
 - `MyImage`: A custom image type that wraps the standard `image.RGBA` type.
@@ -26,15 +31,28 @@ The software is structured around several key types:
 The main function of the program is `makeImageCollage`, which takes a set of parameters and a list of images, and returns a new image that is a collage of the input images.
 
 ## 3. POPL Aspects
+
 The Go programming language is used in this project, which is statically typed and compiled. It supports concurrent programming, which is used in the `makeImageCollage` function to draw images on the background in parallel. Go's garbage collection, strong typing, and built-in testing make it a robust language for this kind of application.
 
 1. **Strongly Typed Language:** Go is a statically typed language, which means the type of a variable is known at compile time. This is evident in the code where each variable is declared with a specific type. For example, in line 31, Image is declared as a pointer to image.RGBA.
 2. **Package System:** Go uses packages for code organization and reuse. In the code, various packages are imported at the beginning (lines 3-19), such as image, image/color, image/draw, image/jpeg, log, math, os, path/filepath, sort, strconv, time, and github.com/nfnt/resize.
-3. **Pointers:** Go supports pointers, allowing you to pass references to values and records within your program. This is evident in the code where pointers are used, for example, in line 31 (Image *image.RGBA).
+3. **Pointers:** Go supports pointers, allowing you to pass references to values and records within your program. This is evident in the code where pointers are used, for example, in line 31 (Image \*image.RGBA).
+
+4. **Concurrency**: Go, the statically typed and compiled language used in this project, has built-in support for concurrent programming. This feature is utilized in the `makeImageCollage` function to draw images on the background in parallel.
+
+5. **Garbage Collection**: Go's garbage collection feature helps manage memory automatically, reducing the chance of memory leaks. This makes it a robust language for applications like this.
+
+6. **Strong Typing**: Go is a strongly typed language, meaning the type of a variable is known at compile time. This feature helps catch errors at compile time, making the code more robust. An example from the code is the declaration of Image as a pointer to image.RGBA at line 31.
+
+7. **Built-in Testing**: Go has built-in support for testing, which makes it easier to ensure the correctness of the code.
+
+8. **Package System**: Go uses packages for code organization and reuse. Various packages such as image, image/color, image/draw, image/jpeg, log, math, os, path/filepath, sort, strconv, time, and github.com/nfnt/resize are imported in the code.
+
+9. **Pointers**: Go supports pointers, allowing references to values and records to be passed within the program. This is evident in the code where pointers are used, for example, in line 31 (Image \*image.RGBA).
 
 ## 4. Results
 
-The result of running the program is a new image that is a collage of the input images. The shape, size, and arrangement of the images in the collage are determined by the parameters passed to the `makeImageCollage` function. 
+The result of running the program is a new image that is a collage of the input images. The shape, size, and arrangement of the images in the collage are determined by the parameters passed to the `makeImageCollage` function.
 
 In addition to the final collage image, the program also produces intermediate output images at each step of the process. These images can be useful for understanding how the collage is constructed and for debugging.
 
