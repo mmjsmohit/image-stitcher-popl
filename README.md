@@ -43,6 +43,10 @@ The Python Imaging Library (PIL), now known as the Pillow library, is a powerful
 
 In creating our image collage project, we've put together different pieces to make everything work smoothly. We used existing tools like the nfnt/resize library in Go and the Python Imaging Library (PIL) to handle some parts of dealing with images. However, the main chunk of our code, where we stitch images, figure out the layout of the collage, and make everything happen at the same time (parallelization), is our own creation. We wrote specific instructions for our project needs, making sure everything fits together well. This customized approach helped us tackle the unique challenges our project presented and ensured that all the different parts work seamlessly to generate image collages.
 
+
+<img width="595" alt="image" src="https://github.com/mmjsmohit/image-stitcher-popl/assets/65406090/e4fe92ab-adf4-4f88-a157-349df7c5b09c">
+
+
 ## 3. POPL Aspects
 
 The Go programming language is used in this project, which is statically typed and compiled. It supports concurrent programming, which is used in the `makeImageCollage` function to draw images on the background in parallel. Go's garbage collection, strong typing, and built-in testing make it a robust language for this kind of application.
