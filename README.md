@@ -7,6 +7,12 @@
 ## 1. Problem Statement
 The Image Stitcher is a Go program designed to create a collage of images. It takes a source path of images and stitches them together based on the provided parameters such as shape, rows, width, and height.
 
+Problem Statement - 
+This project Image Stitcher addresses the technical challenge of programmatically generating image collages. The objective is to implement a solution that enables users to customise collage shapes (rectangles or circles), layouts (number of rows), and employs parallel processing for efficient handling of multiple images. We have implemented this in two languages, Go and Python.
+
+POPL Angle - 
+Parallelism and Performance: The POPL (Principles of Programming Languages) angle in this project lies in the efficient utilisation of parallelism for image rendering, enhancing performance. Golang's concurrency support is leveraged to handle multiple images concurrently, optimising collage creation.
+
 ## 2. Software Architecture
 The software is structured around several key types:
 
